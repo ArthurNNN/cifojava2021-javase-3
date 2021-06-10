@@ -6,6 +6,7 @@ import interfaces.CredentialsCalculations;
 import interfaces.HolidaysCalculations;
 
 public class Member extends User implements CredentialsCalculations, HolidaysCalculations {
+	public int id;
 	private List<HolidaysCalculations> holidays;
 	private CredentialsCalculations credentials;
 
@@ -13,10 +14,41 @@ public class Member extends User implements CredentialsCalculations, HolidaysCal
 		super();
 	}
 
+	
 	@Override
 	public void managmentCredentials() {
 // TODO Auto-generated method stub
 	}
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public List<HolidaysCalculations> getHolidays() {
+		return holidays;
+	}
+
+
+	public void setHolidays(List<HolidaysCalculations> holidays) {
+		this.holidays = holidays;
+	}
+
+
+	public CredentialsCalculations getCredentials() {
+		return credentials;
+	}
+
+
+	public void setCredentials(CredentialsCalculations credentials) {
+		this.credentials = credentials;
+	}
+
 
 	@Override
 	public void calcultateHolidays() {
@@ -24,13 +56,13 @@ public class Member extends User implements CredentialsCalculations, HolidaysCal
 // TODO Auto-generated method stub
 	}
 
+
 	@Override
 	public String toString() {
-		return "Member [holidays=" + holidays + ", credentials=" + credentials + "]";
+		return "Member [id=" + id + ", holidays=" + holidays + ", credentials=" + credentials + "]";
 	}
+	
+	
 
-	public void setId(int i) {
-		// TODO Auto-generated method stub
-		
-	}
+
 }

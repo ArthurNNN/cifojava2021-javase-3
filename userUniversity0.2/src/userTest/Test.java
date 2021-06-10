@@ -32,6 +32,7 @@ public class Test {
 		alexa.setSurname("Kazan");
 		alexa.setId(101);
 		System.out.println(alexa);
+		
 		// this is Sergii, an empoloyee of the university: he handles all the web
 		// and the db and spring java systems
 		Employee sergii = new Employee();
@@ -41,6 +42,8 @@ public class Test {
 		sergii.setSurname("Karmazov");
 		sergii.setName("Sergii");
 		sergii.setSalary(2500);
+		
+		System.out.println();
 
 		// this is Pepe, and employee of the university, manages the fiber optics
 		// network and systems
